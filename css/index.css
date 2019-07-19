@@ -332,12 +332,13 @@ footer {
   align-items: center;
 }
 /*about us stuff*/
-.aboutHome {
-  width: 100%;
-  background: red;
-}
 .globeAnimation {
   position: relative;
+}
+.globeAnimation .space {
+  position: absolute;
+  width: 100%;
+  margin-top: 90px;
 }
 .globeAnimation .globe {
   position: absolute;
@@ -352,4 +353,10 @@ footer {
   100% {
     transform: rotate(360deg);
   }
+}
+.about {
+  background: white;
+  position: relative;
+  padding: 5% 0;
+  margin: 2rem auto;
 }
