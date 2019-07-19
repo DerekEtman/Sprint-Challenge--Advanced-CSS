@@ -172,6 +172,7 @@ p {
   top: 0;
   width: 100%;
   opacity: 0.9;
+  z-index: 1;
   background: #F1F1F1;
   margin: 0 auto;
 }
@@ -332,7 +333,8 @@ footer {
 }
 /*about us stuff*/
 .aboutHome {
-  background-image: url("img/Globe/space.jpg");
+  width: 100%;
+  background: red;
 }
 .globeAnimation {
   position: relative;
@@ -341,7 +343,6 @@ footer {
   position: absolute;
 }
 .globeAnimation .spaceship {
-  position: relative;
   animation: rotate-center 4s linear infinite both;
 }
 @keyframes rotate-center {
