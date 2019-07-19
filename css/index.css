@@ -1,6 +1,7 @@
 .imgBorder {
   border-radius: 20px;
 }
+/*animations*/
 /*RESET IT AND FORGET IT!*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -328,4 +329,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/*about us stuff*/
+.aboutHome {
+  background-image: url("img/Globe/space.jpg");
+}
+.globeAnimation {
+  position: relative;
+}
+.globeAnimation .globe {
+  position: absolute;
+}
+.globeAnimation .spaceship {
+  position: relative;
+  animation: rotate-center 4s linear infinite both;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

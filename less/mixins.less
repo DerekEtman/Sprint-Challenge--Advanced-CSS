@@ -26,3 +26,22 @@
         color:@color;
     }
 }
+
+
+/*animations*/
+
+
+.rotateKey(){
+    @keyframes rotate-center {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+}
+
+.rotationAnimation(){
+    animation: rotate-center 3s linear infinite both;
+}
