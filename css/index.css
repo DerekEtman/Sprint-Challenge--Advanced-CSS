@@ -227,6 +227,12 @@ p {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width:501px) {
+  .home .space-images img:nth-child(2),
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -236,12 +242,6 @@ p {
 @media (max-width:501px) {
   .home .space-images img {
     width: 90%;
-  }
-}
-@media (max-width:501px) {
-  .home .space-images img:nth-child(2),
-  .home .space-images img:nth-child(3) {
-    display: none;
   }
 }
 .home .visit-planets {
@@ -259,18 +259,24 @@ p {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 @media (max-width:501px) {
   .home .walk {
     flex-direction: column-reverse;
-    align-items: center;
-    padding: 0;
-    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
   }
 }
 .home .walk .walk-text {
   width: 50%;
   /*BUTTON GOES HERE!!*/
+}
+@media (max-width:501px) {
+  .home .walk .walk-text {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -294,8 +300,8 @@ p {
 }
 @media (max-width:501px) {
   .home .walk .walk-text .btn {
-    width: 90%;
-    align-items: center;
+    width: 100%;
+    text-align: center;
   }
 }
 .home .walk .walk-img {
@@ -306,6 +312,12 @@ p {
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+@media (max-width:501px) {
+  .home .walk .walk-img {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 footer {
   color: #22283B;
