@@ -1,6 +1,9 @@
 // Home Content
 
 .home {
+  @media @phone{
+    background:red;
+  }
 
   .intro {
 
@@ -10,6 +13,10 @@
 
     p {
       padding:0 15px;
+    }
+
+    img {
+      .imgBorder();
     }
   
   }
@@ -22,7 +29,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .imgBorder();
       height: 100%;
     }
   }
@@ -45,7 +52,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    
     .walk-text {
       width: 50%;
 
@@ -57,7 +64,11 @@
         margin-bottom: 26px;
       }
 
+      /*BUTTON GOES HERE!!*/
+
       .btn {
+        .buttonStyle(@nav-border,@header-font-color);
+
       }
     }
 
@@ -68,7 +79,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .imgBorder();
       }
     }
   }
